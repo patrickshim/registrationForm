@@ -26,6 +26,11 @@ form {
   line-height: 2.5;
 }
 
+.container input, select {
+  display: block;
+  width: 100%;
+}
+
 legend {
   font-weight: bold;
   padding-left: 0px;
@@ -65,30 +70,14 @@ header p {
   padding-left: 3.5px;
 }
 
-input[type="text"], 
-input[type="number"], 
-input[type="email"], 
-input[type="address"], 
-input[type="tel"], 
-select, 
-textarea,
-button {
-  width: 100%;
-  padding: 20px;
-  margin-bottom: 5px;
-  border: none;
-  border-radius: 5px;
-  background-color: #F5F5F5;
+input [type="number"] {
+  width: 20px;
 }
 
 input[type="text"]::placeholder, 
 input[type="email"]::placeholder {
   text-align: right;
   font-style: italic;
-}
-
-input[type="number"] {
-  width: 50%;
 }
 
 #newsletter-p-1 {
@@ -119,4 +108,11 @@ footer {
   text-align: center;
   font-style: italic;
   font-size: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .container input, select {
+    display: inline;
+    width: 50%;
+  }
 }
