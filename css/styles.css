@@ -170,4 +170,24 @@ footer {
     max-width: 35%;
   }
 
+  header h2 {
+    padding-top: 50px;
+    font-size: 30px;
+  }
+
+  legend {
+    padding-top: 50px;
+  }
+
+  #hr-3 {
+    margin-top: 50px;
+  }
+
+  textarea {
+    height: 120px;
+  }
+
+  h5{
+    margin-bottom: 100px;
+  }
 }
