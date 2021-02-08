@@ -12,8 +12,8 @@ body {
   right: 0;
   top: 0;
   height: 70px;
-  background-color: black;
-  color: white;
+  background-color: pink;
+  color: black;
 }
 
 .nav-bar>h1, header h2, legend {
@@ -43,9 +43,11 @@ input:focus, select:focus, textarea:focus, button:focus {
 }
 
 .container input, select, textarea {
-  border: none;
+  outline: none;  
+  border: 2px solid white;
   border-radius: 4px;
   background-color: #E8E8E8;
+  transition: ease-out 1s;
 }
 
 .container label {
@@ -65,7 +67,7 @@ legend {
   text-align: center;
 }
 
-header h2 {
+header h1, h2 {
   padding-bottom: 15px;
   font-weight: bold;
 }
@@ -99,7 +101,9 @@ input [type="number"] {
 }
 
 input[type="text"]::placeholder, 
-input[type="email"]::placeholder {
+input[type="email"]::placeholder,
+input[type="number"]::placeholder,
+input[type="tel"]::placeholder {
   padding-right: 7px;
   text-align: right;
   font-style: italic;
@@ -152,10 +156,10 @@ footer {
     margin-left: 250px;
     margin-right: 250px;
   }
-
+  
   .container input, select{
     flex-basis: 75%;
-  }
+  } 
 
   .container label {
     flex-basis: 25%;
