@@ -141,6 +141,7 @@ button {
   font-size: 20px;
   color: white;
   background-color: #ec6464;
+  cursor: pointer;
 }
 
 footer {
