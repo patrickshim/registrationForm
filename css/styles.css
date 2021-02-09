@@ -50,6 +50,14 @@ input, select, textarea {
   transition: ease-out 1s;
 }
 
+#states>option:first-child {
+  color: grey;
+}
+
+#states>option:nth-child(n+2){
+  background-color: white;
+}
+
 .container label {
   padding-bottom: 5px;
 }
