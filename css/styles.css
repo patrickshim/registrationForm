@@ -42,7 +42,7 @@ input:focus, select:focus, textarea:focus, button:focus {
   padding: 0px 8px;
 }
 
-.container input, select, textarea {
+input, select, textarea {
   outline: none;  
   border: 2px solid white;
   border-radius: 4px;
